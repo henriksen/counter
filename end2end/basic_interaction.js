@@ -34,5 +34,5 @@ test('Open page, increment and decrement', async t => {
     .click(Selector('button').withText('-'))
     .click(Selector('button').withText('-'))
     .expect(Selector('span').innerText)
-    .eql('3');
+    .eql('1');
 });
