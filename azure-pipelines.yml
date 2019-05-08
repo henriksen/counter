@@ -33,8 +33,7 @@ steps:
     PathtoPublish: 'build'
     ArtifactName: 'counter'
 
-- task:
-  script: |
+- script: |
     mkdir $(Build.ArtifactStagingDirectory)/end2endtests
     cp package.json $(Build.ArtifactStagingDirectory)/end2endtests
     cp -r end2end $(Build.ArtifactStagingDirectory)/end2endtests
