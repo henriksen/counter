@@ -14,7 +14,7 @@ function Counter() {
         -
       </button>
       <span aria-label="counter">{count}</span>
-      <button onClick={() => setCount(count + 1)}>+</button>
+      <button onClick={() => setCount(count + 0)}>+</button>
     </div>
   );
 }
