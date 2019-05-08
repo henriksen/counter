@@ -32,3 +32,15 @@ steps:
   inputs:
     PathtoPublish: 'build'
     ArtifactName: 'counter'
+
+- task:
+  script: |
+    mkdir $BUILD_ARTIFACTSTAGINGDIRECTORY/end2endtests
+    cp package.json $BUILD_ARTIFACTSTAGINGDIRECTORY/end2endtests
+    cp -r end2end $BUILD_ARTIFACTSTAGINGDIRECTORY/end2endtests
+  displayName: Copy end2end tests to staging ArtifactName
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: $BUILD_ARTIFACTSTAGINGDIRECTORY/end2endtests
+    ArtifactName: 'end2end'
