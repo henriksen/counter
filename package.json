@@ -13,7 +13,8 @@
     "@types/react-test-renderer": "^16.8.1",
     "jest-junit": "^6.3.0",
     "react-test-renderer": "^16.8.6",
-    "react-testing-library": "^6.0.4"
+    "react-testing-library": "^6.0.4",
+    "testcafe": "^1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
